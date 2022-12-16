@@ -96,7 +96,7 @@ export const MyResume = {
         address: {
             country: 'Armenia',
             city: 'Yerevan',
-            street: 'Qocharyan 8',
+            street: '8 Qocharyan St.',
         },
         phone: '+374 55219664',
         dateOfBirth: 'Jan 6, 1990',

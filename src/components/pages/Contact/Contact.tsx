@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
 import UserContext from "../../../Provider/Context";
-import {AddressSvg, PhoneSvg} from "./icon/index";
+import {AddressSvg, DateOfBirthSvg, EmailSvg, PhoneSvg, SocialSvg} from "./icon/index";
 
 const Contact = () => {
     const contact = useContext(UserContext)
@@ -16,17 +16,32 @@ const Contact = () => {
                 <div className={classes.leftInfoBlock}>
                     <div className={classes.block}>
                         <AddressSvg/>
-                        <span>{address.country} {address.city} {address.street}</span>
+                        <span>{address.street}, {address.city}, {address.country}</span>
                     </div>
                     <hr/>
                     <div className={classes.block}>
                         <PhoneSvg/>
-                        <span>{address.country} {address.city} {address.street}</span>
+                        <span>{phone}</span>
                     </div>
                     <hr/>
-
+                    <div className={classes.block}>
+                        <EmailSvg/>
+                        <span>{email}</span>
+                    </div>
+                    <hr/>
                 </div>
-
+                <div className={classes.rightInfoBlock}>
+                    <div className={classes.block}>
+                        <SocialSvg/>
+                        <a href={social.linkedin}>Linkedin</a>
+                    </div>
+                    <hr/>
+                    <div className={classes.block}>
+                        <DateOfBirthSvg/>
+                        <span>{dateOfBirth}</span>
+                    </div>
+                    <hr/>
+                </div>
             </div>
 
         </div>
