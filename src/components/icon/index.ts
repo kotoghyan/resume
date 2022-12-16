@@ -1,0 +1,7 @@
+export {ReactComponent as EducationSvg} from './education.svg'
+export {ReactComponent as ExperienceSvg} from './experience.svg'
+export {ReactComponent as JavascriptSvg} from './javascript.svg'
+export {ReactComponent as LanguagesSvg} from './languages.svg'
+export {ReactComponent as SkillsSvg} from './skills.svg'
+export {ReactComponent as AboutMeSvg} from './aboutme.svg'
+export {ReactComponent as ContactSvg} from './contact.svg'

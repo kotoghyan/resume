@@ -1,0 +1,33 @@
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+
+.content {
+    background-color:rgba(0, 0, 0, 0.1);
+    height: 100%;
+    font-size: 20px;
+    padding: 25px;
+}
+.leftInfoBlock {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.leftInfoBlock hr {
+    border-color: rgba(250,250,250, 0.5);
+}
+.block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #dedede;
+}
+
+.block svg {
+    width: 30px;
+    height: 30px;
+    fill:#dedede;
+}

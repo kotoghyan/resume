@@ -1,0 +1,6 @@
+.root {
+    background: linear-gradient(90deg, rgb(12, 0, 17) 0%, rgb(115, 55, 175) 100%);
+    display: flex;
+    color: #dedede;
+    gap: 16px;
+}

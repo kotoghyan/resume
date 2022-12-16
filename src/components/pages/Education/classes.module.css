@@ -1,0 +1,11 @@
+.root {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+
+.content {
+    background-color:rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
