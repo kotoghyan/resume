@@ -16,13 +16,13 @@ export const MyResume = {
                 location: {
                     country: 'Armenia',
                     city: 'Yerevan',
-                    street: 'Abovyan 26a',
+                    street: '26a Abovyan St.',
                 },
                 start: 'Mar 2021',
                 end: null,
-                aboutJob: '2D, 3D, Video Cartoon Creator, ' +
-                    'Expression writer Using programing languages, ' +
-                    'Using js(main), payton(less), mel(less), c++(less)'
+                aboutJob: `2D, 3D, Video Cartoon Creator, 
+    Expression writer Using programing languages, 
+    sing js(main), payton(less), mel(less), c++(less)`
             },
             DigiStep: {
                 name: 'DigiStep',
@@ -39,9 +39,9 @@ export const MyResume = {
         Freelance: {
             name: 'Freelance',
             start: 'Jan 2021',
-            aboutJob: 'Creating small web-applications ' +
-                'Refactoring applications from Native JS ' +
-                'Fixing errors, problems, bugs, adding new features'
+            aboutJob: `Creating small web-applications
+    Refactoring applications from Native JS,
+    Fixing errors, problems, bugs, adding new features`
         }
     },
     education: {
@@ -91,7 +91,7 @@ export const MyResume = {
 
     },
     contacts: {
-        title:'Contact',
+        title: 'Contact',
         email: 'kotoghyan.karapet@gmail.com',
         address: {
             country: 'Armenia',
@@ -105,7 +105,7 @@ export const MyResume = {
             linkedin: 'https://www.linkedin.com/in/karo-kotoghyan-5b8061226/',
         }
     },
-    aboutMe:{
-        title:'About Me',
+    aboutMe: {
+        title: 'About Me',
     }
 } as const

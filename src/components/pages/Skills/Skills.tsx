@@ -5,8 +5,8 @@ import UserContext from "../../../Provider/Context";
 
 const Skills = () => {
 
-    const skills = useContext(UserContext)
-    const {title} = skills.skills
+    const skill = useContext(UserContext)
+    const {title,skills } = skill.skills
 
     return (
         <div className={classes.root}>
@@ -14,6 +14,7 @@ const Skills = () => {
                 <Header title={title}/>
             </header>
             <div className={classes.content}>
+                {skills.map(el => <div key={el+'_id'} className={classes.item}> <span>{el},</span></div>)}
             </div>
 
         </div>

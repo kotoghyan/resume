@@ -1,11 +1,25 @@
 .root {
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap:16px
 }
 
 .content {
-    background-color:rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
+    font-size: 35px;
+    display: flex;
+    padding: 25px;
+    word-spacing: 10px;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
 }
+.content > .item {
+    background-color: rgba(222, 222, 222, 0.1);
+}
+
