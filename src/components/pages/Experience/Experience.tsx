@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
 import UserContext from "../../../Provider/Context";
+import aditiveLogo from './logo/ADiteve.png'
+import digistepLogo from './logo/digistep.png'
 
 const Experience = () => {
     const experience = useContext(UserContext);
@@ -21,7 +23,7 @@ const Experience = () => {
             <div className={classes.content}>
                 <div className={classes.company}>
                     <div className={classes.item}>
-                        <h2>{company.ADiteve.name}</h2>
+                        <h2><img src={aditiveLogo} className={classes.aditiveLogo}/> {company.ADiteve.name}</h2>
                         <ul>
                             <li>{aditeve.vacancy}</li>
                             <li>{aditeve.start} - Present</li>
@@ -30,7 +32,7 @@ const Experience = () => {
                         </ul>
                     </div>
                     <div className={classes.item}>
-                        <h2>{digiStep.name}</h2>
+                        <h2><img src={digistepLogo} className={classes.digistepLogo}/> {digiStep.name}</h2>
                         <ul>
                             <li>{digiStep.aboutJob}</li>
                             <li>{digiStep.start} - {digiStep.end}</li>

@@ -5,7 +5,14 @@
     gap: 16px;
     font-size: 24px;
 }
-
+.aditiveLogo{
+    width: 60px;
+    height: 20px;
+}
+.digistepLogo{
+    width: 30px;
+    height: 30px;
+}
 .content {
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
