@@ -7,7 +7,7 @@ import digistepLogo from './logo/digistep.png'
 
 const Experience = () => {
     const experience = useContext(UserContext);
-    const {title,company,Freelance} = experience.experience;
+    const {title, company, Freelance} = experience.experience;
 
     const aditeve = company.ADiteve
     const loc = company.ADiteve.location
@@ -21,30 +21,35 @@ const Experience = () => {
                 <Header title={title}/>
             </header>
             <div className={classes.content}>
-                <div className={classes.company}>
-                    <div className={classes.item}>
-                        <h2><img src={aditiveLogo} className={classes.aditiveLogo}/> {company.ADiteve.name}</h2>
-                        <ul>
-                            <li>{aditeve.vacancy}</li>
-                            <li>{aditeve.start} - Present</li>
-                            <li>{loc.street}, {loc.city}, {loc.country}</li>
-                            <li><pre><code>{aditeve.aboutJob}</code></pre></li>
-                        </ul>
+                <div className={classes.item}>
+                    <div className={classes.subTitle}>
+                        <img src={aditiveLogo} className={classes.aditiveLogo}/>
+                        <h1> {company.ADiteve.name}</h1>
+                        <span>{loc.street}, {loc.city}, {loc.country}</span>
                     </div>
-                    <div className={classes.item}>
-                        <h2><img src={digistepLogo} className={classes.digistepLogo}/> {digiStep.name}</h2>
-                        <ul>
-                            <li>{digiStep.aboutJob}</li>
-                            <li>{digiStep.start} - {digiStep.end}</li>
-                            <li>{digiStep.location.city}</li>
-                        </ul>
+                    <div className={classes.jobInfo}>
+                        <h2>{aditeve.vacancy}</h2>
+                        <span>{aditeve.start} - Present</span>
+                        <span><pre><code>{aditeve.aboutJob}</code></pre></span>
                     </div>
-                    <div className={classes.item}>
-                        <h2>{Freelance.name}</h2>
-                        <ul>
-                            <li>{Freelance.start} - Present</li>
-                            <li><pre><code>{Freelance.aboutJob}</code></pre></li>
-                        </ul>
+                </div>
+                <div className={classes.item}>
+                    <div className={classes.subTitle}>
+                        <img src={digistepLogo} className={classes.digistepLogo}/> <h1>{digiStep.name}</h1>
+                        <span>{digiStep.location.city}</span>
+                    </div>
+                    <div className={classes.jobInfo}>
+                        <h2>{digiStep.aboutJob}</h2>
+                        <span>{digiStep.start} - {digiStep.end}</span>
+                    </div>
+                </div>
+                <div className={classes.item}>
+                    <div className={classes.jobInfo}>
+                        <h1>{Freelance.name}</h1>
+                    </div>
+                    <div className={classes.jobInfo}>
+                        <span>{Freelance.start} - Present</span>
+                        <span><pre><code>{Freelance.aboutJob}</code></pre></span>
                     </div>
                 </div>
             </div>

@@ -50,6 +50,7 @@ export const MyResume = {
             name: 'Programming',
             educationalCenter: 'Yerevan State College of Informatics',
             location: {
+                street:'52 Mamikonyants St.',
                 country: 'Armenia',
                 city: 'Yerevan',
             },
@@ -69,7 +70,7 @@ export const MyResume = {
     },
     skills: {
         title: 'Skills',
-        skills: ['Teamwork', 'Problem-Solving', 'Leadership', 'Handling conflict', 'Mentoring'],
+        skills: ['Teamwork', 'Problem-Solving', 'Leadership', 'Handling conflicts', 'Mentoring'],
     },
     languages: {
         title: 'Languages',
@@ -88,6 +89,16 @@ export const MyResume = {
     },
     jsSkills: {
         title: 'JS skills',
+        js:{
+            languages:{
+                name:['JavaScript','TypeScript','HTML5', 'CSS3' ]
+            },
+            libraries: 'React',
+            subLib:['React hooks','React router dom','REST API',
+                'Axios','Redux','Redux Toolkit','Redux Thunk',
+                'Redux FinalForm','Formik','Yup'],
+            tools: ['Styled components','Scss','Material UI','Bootstrap'],
+        }
 
     },
     contacts: {

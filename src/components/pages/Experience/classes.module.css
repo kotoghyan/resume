@@ -17,19 +17,28 @@
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     padding: 25px;
-}
-
-.root li {
-    margin-left: 30px;
-}
-
-.root ul {
-    list-style-type: square;
-}
-
-.company {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 40px;
+    gap: 50px;
 }
+.subTitle {
+    display: flex;
+    align-items: end;
+    gap:20px
+}
+.subTitle span{
+   font-size: 16px;
+}
+.subTitle h2{
+   font-size: 20px;
+}
+.jobInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.subTitle img {
+    align-self: center;
+}
+
+
