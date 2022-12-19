@@ -34,6 +34,8 @@ const Contact = () => {
                     <div className={classes.block}>
                         <SocialSvg/>
                         <a href={social.linkedin}>Linkedin</a>
+                        <a href={social.git}>Github</a>
+
                     </div>
                     <hr/>
                     <div className={classes.block}>

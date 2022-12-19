@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .leftInfoBlock,.rightInfoBlock {
     display: flex;
@@ -29,9 +30,13 @@
     gap: 16px;
     color: #dedede;
 }
+
 .block a{
+    display: block;
     text-decoration: none;
     color: #dedede;
+    background-color: rgba(222, 222, 222, 0.1);
+    padding: 8px;
 }
 .block a:visited{
     text-decoration: none;

@@ -50,19 +50,19 @@ export const MyResume = {
             name: 'Programming',
             educationalCenter: 'Yerevan State College of Informatics',
             location: {
-                street:'52 Mamikonyants St.',
-                country: 'Armenia',
-                city: 'Yerevan',
+                street:' 52 Mamikonyants St.',
+                country: ' Armenia',
+                city: ' Yerevan',
             },
-            start: 'Sep 2020',
-            end: 'Dec 2020',
+            start: '2004',
+            end: '2008',
         },
         javaScript: {
             name: 'JavaScript',
             educationalCenter: 'Microsoft Innovation Center',
             location: {
-                country: 'Armenia',
-                city: 'Yerevan',
+                country: ' Armenia',
+                city: ' Yerevan',
             },
             start: 'Sep 2020',
             end: 'Dec 2020'
@@ -114,6 +114,7 @@ export const MyResume = {
         Nationality: 'Armenian',
         social: {
             linkedin: 'https://www.linkedin.com/in/karo-kotoghyan-5b8061226/',
+            git:'https://github.com/kotoghyan'
         }
     },
     aboutMe: {

@@ -1,9 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+    gap: 25px;
+    padding-bottom: 50px;
+}
 .root {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    background: rgba(0, 0, 0, 0.1);
     padding: 25px;
 }
 
@@ -50,5 +56,24 @@
         background-color:  #fb0094;
     }
 }
+.link {
+    text-align: center;
+}
+.link > a {
+    text-decoration: none;
+    color: #dedede;
+    border: 2px #dedede solid;
+    padding: 16px;
+    background-color: rgba(251, 0, 148, 0.05);
+}
+.link > a:visited{
+    text-decoration: none;
+}
+
+.link > a:active {
+    border: 2px #fb0094 solid;
+    color: #fb0094;
+}
+
 
 
