@@ -1,12 +1,12 @@
 import React, {useContext, useEffect, useState} from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
-import UserContext from "../../../Provider/Context";
+import {useLanguage} from "../../../Providers/LanguageProvider";
 import LangBox from "./LangBox/LangBox";
 
 const Languages = () => {
-    const languages = useContext(UserContext)
-    const {title,armenian,english,russian} = languages.languages;
+    const {l} =useLanguage()
+    const {title,armenian,english,russian} = l.languages;
     const lang = [armenian, english, russian]
 
     return (
@@ -16,7 +16,7 @@ const Languages = () => {
             </header>
             <div className={classes.content}>
                 {lang.map((el,i) => {
-                   return  <LangBox key={el.lang} lang={el.lang} know={el.know} />
+                   return  <LangBox key={el.lang + '_id'} lang={el.lang} know={el.know} />
                 })}
             </div>
 

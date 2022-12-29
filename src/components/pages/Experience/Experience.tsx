@@ -1,31 +1,30 @@
 import React, {useContext} from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
-import UserContext from "../../../Provider/Context";
+import  {useLanguage} from "../../../Providers/LanguageProvider";
 import aditiveLogo from './logo/ADiteve.png'
 import digistepLogo from './logo/digistep.png'
 
+
+
 const Experience = () => {
-    const experience = useContext(UserContext);
-    const {title, company, Freelance} = experience.experience;
+    const {l} = useLanguage()
+    const aditeve = l.experience.company.ADiteve
 
-    const aditeve = company.ADiteve
-    const loc = company.ADiteve.location
-    const job = String.raw`${aditeve.aboutJob}`
 
-    const digiStep = company.DigiStep
+    const digiStep = l.experience.company.DigiStep
 
     return (
         <div className={classes.root}>
             <header>
-                <Header title={title}/>
+                <Header title={l.experience.title}/>
             </header>
             <div className={classes.content}>
                 <div className={classes.item}>
                     <div className={classes.subTitle}>
                         <img src={aditiveLogo} className={classes.aditiveLogo}/>
-                        <h1> {company.ADiteve.name}</h1>
-                        <span>{loc.street}, {loc.city}, {loc.country}</span>
+                        <h1> {aditeve.name}</h1>
+                        <span>{aditeve.location.street}, {aditeve.location.city}, {aditeve.location.country}</span>
                     </div>
                     <div className={classes.jobInfo}>
                         <h2>{aditeve.vacancy}</h2>
@@ -45,11 +44,11 @@ const Experience = () => {
                 </div>
                 <div className={classes.item}>
                     <div className={classes.jobInfo}>
-                        <h1>{Freelance.name}</h1>
+                        <h1>{l.experience.Freelance.name}</h1>
                     </div>
                     <div className={classes.jobInfo}>
-                        <span>{Freelance.start} - Present</span>
-                        <span><pre><code>{Freelance.aboutJob}</code></pre></span>
+                        <span>{l.experience.Freelance.start} - Present</span>
+                        <span><pre><code>{l.experience.Freelance.aboutJob}</code></pre></span>
                     </div>
                 </div>
             </div>

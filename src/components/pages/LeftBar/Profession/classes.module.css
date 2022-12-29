@@ -19,3 +19,6 @@
 .root h1::selection,.root h2::selection {
     background-color: #d234f1;
 }
+.root a {
+    cursor: pointer;
+}

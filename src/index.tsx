@@ -4,19 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
-import UserContext from './Provider/Context';
-import {MyResume} from "./MyResume/MyResume";
+import {LanguageProvider} from "./Providers/LanguageProvider";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        {/*<UserContext.Provider value={MyResume}>*/}
-            <BrowserRouter>
-                <App/>
+        <BrowserRouter>
+        <LanguageProvider>
+            <App/>
+        </LanguageProvider>
+
+
             </BrowserRouter>
-        {/*</UserContext.Provider>*/}
 
     </React.StrictMode>
 );

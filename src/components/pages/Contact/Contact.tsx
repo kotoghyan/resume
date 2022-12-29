@@ -1,12 +1,12 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
-import UserContext from "../../../Provider/Context";
+import {useLanguage} from "../../../Providers/LanguageProvider";
 import {AddressSvg, DateOfBirthSvg, EmailSvg, PhoneSvg, SocialSvg} from "./icon/index";
 
 const Contact = () => {
-    const contact = useContext(UserContext)
-    const {title, social, phone, Nationality, email, dateOfBirth, address} = contact.contacts
+    const {l} = useLanguage();
+    const {title, social, phone, Nationality, email, dateOfBirth, address} = l.contacts
     return (
         <div className={classes.root}>
             <header>

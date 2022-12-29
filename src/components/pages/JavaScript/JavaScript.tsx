@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
-import UserContext from "../../../Provider/Context";
+import {useLanguage} from "../../../Providers/LanguageProvider";
 
 const JavaScript = () => {
-    const javaScript = useContext(UserContext)
-    const {title, js} = javaScript.jsSkills
+    const {l,t} = useLanguage()
+    const {title, js} = l.jsSkills
     return (
         <div className={classes.root}>
             <header>
@@ -13,7 +13,7 @@ const JavaScript = () => {
             </header>
             <div className={classes.content}>
                 <div className={classes.languages}>
-                    <h1>Languages</h1>
+                    <h1>{t('languages')}</h1>
                     {js.languages.name.map(el => <h2 key={el + '_id'}>{el}</h2>)}
                 </div>
                 <div className={classes.libraries}>

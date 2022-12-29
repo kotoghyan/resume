@@ -1,18 +1,19 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import classes from './classes.module.css'
 import Header from "../../Hok/Header/Header";
-import UserContext from "../../../Provider/Context";
+import {useLanguage} from "../../../Providers/LanguageProvider";
+import {Lang} from "../../../Providers/type";
 
-type Props = {
-
-}
 const AboutMe = () => {
-    const aboutMe = useContext(UserContext)
-    const {title}  = aboutMe.aboutMe
+    const {t, setLanguage, language,l} = useLanguage();
+
+
     return (
         <div className={classes.root}>
+            <button onClick={()=>setLanguage(Lang.en)}>EN</button>
+            <button onClick={()=>setLanguage(Lang.ru)}>RU</button>
             <header>
-                <Header title={title}/>
+                <Header title={l?.aboutMe?.title}/>
             </header>
             <div className={classes.content}>
 

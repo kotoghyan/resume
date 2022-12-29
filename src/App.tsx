@@ -3,7 +3,6 @@ import classes from './app.module.css';
 import LeftBar from "./components/pages/LeftBar/LeftBar";
 import {Route, Routes} from "react-router-dom";
 import Education from "./components/pages/Education/Education";
-import UserContext from "./Provider/Context";
 import AboutMe from "./components/pages/AboutMe/AboutMe";
 import Experience from "./components/pages/Experience/Experience";
 import Skills from "./components/pages/Skills/Skills";
@@ -12,13 +11,12 @@ import Languages from "./components/pages/Languages/Languages";
 import Contact from "./components/pages/Contact/Contact";
 
 function App() {
-    const props = useContext(UserContext)
     return (
         <div className={classes.root}>
             <LeftBar/>
             <Routes>
                 <Route path={'/'} element={<AboutMe/>}/>
-                <Route path={'/education'} element={<Education education={props.education}/>}/>
+                <Route path={'/education'} element={<Education />}/>
                 <Route path={'/experience'} element={<Experience/>}/>
                 <Route path={'/skills'} element={<Skills/>}/>
                 <Route path={'javaScript'} element={<JavaScript/>}/>
