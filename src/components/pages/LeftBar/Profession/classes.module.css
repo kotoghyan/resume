@@ -22,3 +22,17 @@
 .root a {
     cursor: pointer;
 }
+.flag{
+    display: flex;
+    gap: 8px;
+}
+.flag img{
+    width: 30px;
+    height: 30px;
+}
+.flag > button{
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}

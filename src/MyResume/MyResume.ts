@@ -1,126 +1,6 @@
 import photo from '../components/image/photo.jpg'
 
-// export const MyResume = {
-//     general: {
-//         profession: 'Front End Developer',
-//         name: 'Karapet',
-//         firstName: 'Kotoghyan',
-//         img: photo
-//     },
-//     experience: {
-//         title: 'Experience',
-//         company: {
-//             ADiteve: {
-//                 name: 'ADiteve',
-//                 vacancy: '2D, 3D Generalist',
-//                 location: {
-//                     country: 'Armenia',
-//                     city: 'Yerevan',
-//                     street: '26a Abovyan St.',
-//                 },
-//                 start: 'Mar 2021',
-//                 end: null,
-//                 aboutJob: `2D, 3D, Video Cartoon Creator,
-//     Expression writer Using programing languages,
-//     sing js(main), payton(less), mel(less), c++(less)`
-//             },
-//             DigiStep: {
-//                 name: 'DigiStep',
-//                 location: {
-//                     country: null,
-//                     city: 'Yerevan',
-//                     street: null,
-//                 },
-//                 start: 'Feb 2017',
-//                 end: 'Dec 2020',
-//                 aboutJob: '3D Cartoon Animator'
-//             }
-//         },
-//         Freelance: {
-//             name: 'Freelance',
-//             start: 'Jan 2021',
-//             aboutJob: `Creating small web-applications
-//     Refactoring applications from Native JS,
-//     Fixing errors, problems, bugs, adding new features`
-//         }
-//     },
-//     education: {
-//         title: 'Education',
-//         programming: {
-//             name: 'Programming',
-//             educationalCenter: 'Yerevan State College of Informatics',
-//             location: {
-//                 street:' 52 Mamikonyants St.',
-//                 country: ' Armenia',
-//                 city: ' Yerevan',
-//             },
-//             start: '2004',
-//             end: '2008',
-//         },
-//         javaScript: {
-//             name: 'JavaScript',
-//             educationalCenter: 'Microsoft Innovation Center',
-//             location: {
-//                 country: ' Armenia',
-//                 city: ' Yerevan',
-//             },
-//             start: 'Sep 2020',
-//             end: 'Dec 2020'
-//         }
-//     },
-//     skills: {
-//         title: 'Skills',
-//         skills: ['Teamwork', 'Problem-Solving', 'Leadership', 'Handling conflicts', 'Mentoring'],
-//     },
-//     languages: {
-//         title: 'Languages',
-//         armenian: {
-//             lang: 'Armenian',
-//             know: 'Native',
-//         },
-//         russian: {
-//             lang: 'Russian',
-//             know: 'C2+',
-//         },
-//         english: {
-//             lang: 'English',
-//             know: 'A2+',
-//         },
-//     },
-//     jsSkills: {
-//         title: 'JS skills',
-//         js:{
-//             languages:{
-//                 name:['JavaScript','TypeScript','HTML5', 'CSS3' ]
-//             },
-//             libraries: 'React',
-//             subLib:['React hooks','React router dom','REST API',
-//                 'Axios','Redux','Redux Toolkit','Redux Thunk',
-//                 'Redux FinalForm','Formik','Yup'],
-//             tools: ['Styled components','Scss','Material UI','Bootstrap'],
-//         }
-//
-//     },
-//     contacts: {
-//         title: 'Contact',
-//         email: 'kotoghyan.karapet@gmail.com',
-//         address: {
-//             country: 'Armenia',
-//             city: 'Yerevan',
-//             street: '8 Qocharyan St.',
-//         },
-//         phone: '+374 55219664',
-//         dateOfBirth: 'Jan 6, 1990',
-//         Nationality: 'Armenian',
-//         social: {
-//             linkedin: 'https://www.linkedin.com/in/karo-kotoghyan-5b8061226/',
-//             git:'https://github.com/kotoghyan'
-//         }
-//     },
-//     aboutMe: {
-//         title: 'About Me',
-//     }
-// } as const
+
 
 export const MyResume = {
     en: {
@@ -145,7 +25,7 @@ export const MyResume = {
                     end: null,
                     aboutJob: `2D, 3D, Video Cartoon Creator,
     Expression writer Using programing languages,
-    sing js(main), payton(less), mel(less), c++(less)`
+    js(main), payton(less), mel(less), c++(less)`
                 },
                 DigiStep: {
                     name: 'DigiStep',
@@ -246,57 +126,57 @@ export const MyResume = {
     },
     ru: {
         general: {
-            profession: 'Front End Developer',
-            name: 'Karapet',
-            firstName: 'Kotoghyan',
+            profession: 'Front End Разработчик',
+            name: 'Карапет',
+            firstName: 'Котогян',
             img: photo
         },
         experience: {
-            title: 'Experience',
+            title: 'Опыт Работы',
             company: {
                 ADiteve: {
                     name: 'ADiteve',
                     vacancy: '2D, 3D Generalist',
                     location: {
-                        country: 'Armenia',
-                        city: 'Yerevan',
-                        street: '26a Abovyan St.',
+                        country: 'Армения',
+                        city: 'Ереван',
+                        street: 'Ул. Абовяна 26а',
                     },
-                    start: 'Mar 2021',
+                    start: 'Март 2021',
                     end: null,
-                    aboutJob: `2D, 3D, Video Cartoon Creator,
-    Expression writer Using programing languages,
-    sing js(main), payton(less), mel(less), c++(less)`
+                    aboutJob: `2D, 3D, Мультипликатор,
+    Составитель выражений Используя языки программирования,
+    js(основной), payton(реже), mel(реже), c++(реже)`
                 },
                 DigiStep: {
                     name: 'DigiStep',
                     location: {
                         country: null,
-                        city: 'Yerevan',
+                        city: 'Ереван',
                         street: null,
                     },
-                    start: 'Feb 2017',
-                    end: 'Dec 2020',
-                    aboutJob: '3D Cartoon Animator'
+                    start: 'Фев 2017',
+                    end: 'Дек 2020',
+                    aboutJob: '3D Аниматор, Мультипликатор'
                 }
             },
             Freelance: {
-                name: 'Freelance',
-                start: 'Jan 2021',
-                aboutJob: `Creating small web-applications
-    Refactoring applications from Native JS,
-    Fixing errors, problems, bugs, adding new features`
+                name: 'Фриланс',
+                start: 'Янв 2021',
+                aboutJob: `Создание небольших веб-приложений
+    Рефакторинг приложеней из ванила JS,
+    Исправления ошибок, проблем, багов, добавление новых свойств, атрибутов`
             }
         },
         education: {
-            title: 'Education',
+            title: 'Образование',
             programming: {
-                name: 'Programming',
-                educationalCenter: 'Yerevan State College of Informatics',
+                name: 'Программироование',
+                educationalCenter: 'Ереванский государственный колледж информатики',
                 location: {
-                    street: ' 52 Mamikonyants St.',
-                    country: ' Armenia',
-                    city: ' Yerevan',
+                    street: ' Ул. Мамиконянц 52',
+                    country: ' Армения',
+                    city: ' Ереван',
                 },
                 start: '2004',
                 end: '2008',
@@ -305,34 +185,34 @@ export const MyResume = {
                 name: 'JavaScript',
                 educationalCenter: 'Microsoft Innovation Center',
                 location: {
-                    country: ' Armenia',
-                    city: ' Yerevan',
+                    country: ' Армения',
+                    city: ' Ереван',
                 },
-                start: 'Sep 2020',
-                end: 'Dec 2020'
+                start: 'Сен. 2020',
+                end: 'Дек. 2020'
             }
         },
         skills: {
-            title: 'Skills',
-            skills: ['Teamwork', 'Problem-Solving', 'Leadership', 'Handling conflicts', 'Mentoring'],
+            title: 'Навыки',
+            skills: ['Командная работа', 'Решение проблем', 'Лидерство', 'Разрешение конфликтов', 'наставничество'],
         },
         languages: {
-            title: 'Languages',
+            title: 'Языки',
             armenian: {
-                lang: 'Armenian',
-                know: 'Native',
+                lang: 'Армянский',
+                know: 'Родной',
             },
             russian: {
-                lang: 'Russian',
+                lang: 'Русский',
                 know: 'C2+',
             },
             english: {
-                lang: 'English',
+                lang: 'Английский',
                 know: 'A2+',
             },
         },
         jsSkills: {
-            title: 'JS skills',
+            title: 'JS умения',
             js: {
                 languages: {
                     name: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3']
@@ -346,23 +226,23 @@ export const MyResume = {
 
         },
         contacts: {
-            title: 'Contact',
+            title: 'Контакты',
             email: 'kotoghyan.karapet@gmail.com',
             address: {
-                country: 'Armenia',
-                city: 'Yerevan',
-                street: '8 Qocharyan St.',
+                country: 'Армения',
+                city: 'Ереван',
+                street: 'Ул. Кочаряна 8',
             },
             phone: '+374 55219664',
-            dateOfBirth: 'Jan 6, 1990',
-            Nationality: 'Armenian',
+            dateOfBirth: 'Янв 6, 1990',
+            Nationality: 'армянин',
             social: {
                 linkedin: 'https://www.linkedin.com/in/karo-kotoghyan-5b8061226/',
                 git: 'https://github.com/kotoghyan'
             }
         },
         aboutMe: {
-            title: 'barevaper',
+            title: 'Обо мне',
         }
     },
 
@@ -378,7 +258,8 @@ export const languages = {
         languages: 'Languages',
         education: 'Education',
         contact: 'Contact',
-        downloadCV:'Download CV'
+        downloadCV:'Download CV',
+        tools: 'Tools'
     },
     ru: {
         aboutMe: 'Обо мне',
@@ -388,7 +269,8 @@ export const languages = {
         languages: 'Языки',
         education: 'Образование:',
         contact: 'Контакт',
-        downloadCV:'Скачать Резюме'
+        downloadCV:'Скачать Резюме',
+        tools:'Инструменты'
     }
 
 } as const

@@ -17,7 +17,7 @@ type Props = {
 
 export const LanguageProvider = ({ children }: Props) => {
     const [language, setLanguage] = useState<Lang>(defaultValue.language);
-    const l = MyResume[language]
+    const data = MyResume[language]
 
     const setter = useCallback((language:Lang) => {
         setLanguage(language);
@@ -29,7 +29,7 @@ export const LanguageProvider = ({ children }: Props) => {
         return languages[language][word]
     }, [language])
 
-    const value = useMemo(() => ({language, setLanguage: setter, t,l}), [language]);
+    const value = useMemo(() => ({language, setLanguage: setter, t,l: data}), [language]);
 
     return (
         <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>

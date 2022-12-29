@@ -10,8 +10,7 @@ const AboutMe = () => {
 
     return (
         <div className={classes.root}>
-            <button onClick={()=>setLanguage(Lang.en)}>EN</button>
-            <button onClick={()=>setLanguage(Lang.ru)}>RU</button>
+
             <header>
                 <Header title={l?.aboutMe?.title}/>
             </header>
