@@ -16,7 +16,7 @@ function App() {
             <LeftBar/>
             <Routes>
                 <Route path={'/'} element={<AboutMe/>}/>
-                <Route path={'/education'} element={<Education />}/>
+                <Route path={'/education'}  element={<Education />}/>
                 <Route path={'/experience'} element={<Experience/>}/>
                 <Route path={'/skills'} element={<Skills/>}/>
                 <Route path={'javaScript'} element={<JavaScript/>}/>
