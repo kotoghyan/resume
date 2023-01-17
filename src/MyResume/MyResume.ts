@@ -122,6 +122,12 @@ export const MyResume = {
         },
         aboutMe: {
             title: 'About Me',
+            about: 'Hello! I am Karapet \n' +
+                'I am an experienced 2D and 3D animator. I want to switch to Web Development.\n' +
+                'I am a dedicated, organized and methodical individual. ' +
+                'I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. ' +
+                'I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done.' +
+                ' I am determined and decisive. I identify and develop opportunities.'
         }
     },
     ru: {
@@ -243,9 +249,13 @@ export const MyResume = {
         },
         aboutMe: {
             title: 'Обо мне',
+            about: 'Привет!  Я Карапет. \n' +
+                'Я опытный 2D и 3D аниматор.  Хочу поменять профиль на веб-разработку. \n' +
+                'Я преданный, организованный и методичный человек. У меня хорошие навыки межличностного общения, я отлично работаю в команде и очень хочу учиться и развивать новые навыки. \n ' +
+                'В работе надежен и часто ищу новые обязанности в широком диапазоне областей занятости.  У меня активный и динамичный подход к профессии и достижению цели.  Я решителен и сфокусирован. \n ' +
+                'Стараюсь выявлять и развивать возможности.'
         }
     },
-
 } as const
 
 
@@ -271,5 +281,5 @@ export const languages: Record<string,Record<string, string>> = {
         contact: 'Контакт',
         downloadCV:'Скачать Резюме',
         tools:'Инструменты'
-    }
+    },
 }

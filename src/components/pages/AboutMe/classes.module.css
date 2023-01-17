@@ -9,3 +9,7 @@
     background-color:rgba(0, 0, 0, 0.1);
     height: 100%;
 }
+.content p {
+    font-size: 25px;
+    padding: 25px;
+}
