@@ -249,7 +249,7 @@ export const MyResume = {
 } as const
 
 
-export const languages = {
+export const languages: Record<string,Record<string, string>> = {
     en: {
         aboutMe: 'AboutMe',
         experience: 'Experience',
@@ -272,5 +272,4 @@ export const languages = {
         downloadCV:'Скачать Резюме',
         tools:'Инструменты'
     }
-
-} as const
+}
