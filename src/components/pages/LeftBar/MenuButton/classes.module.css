@@ -1,0 +1,15 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    background: #dedede;
+    width: 25px;
+    height: 2px;
+}

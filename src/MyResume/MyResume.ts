@@ -99,8 +99,8 @@ export const MyResume = {
                 libraries: 'React',
                 subLib: ['React hooks', 'React router dom', 'REST API',
                     'Axios', 'Redux', 'Redux Toolkit', 'Redux Thunk',
-                    'Redux FinalForm', 'Formik', 'Yup'],
-                tools: ['Styled components', 'Scss', 'Material UI', 'Bootstrap'],
+                    'Redux FinalForm', 'Formik', 'Yup','Styled components','Scss'],
+                tools: ['Material UI', 'Bootstrap'],
             }
 
         },
@@ -226,8 +226,8 @@ export const MyResume = {
                 libraries: 'React',
                 subLib: ['React hooks', 'React router dom', 'REST API',
                     'Axios', 'Redux', 'Redux Toolkit', 'Redux Thunk',
-                    'Redux FinalForm', 'Formik', 'Yup'],
-                tools: ['Styled components', 'Scss', 'Material UI', 'Bootstrap'],
+                    'Redux FinalForm', 'Formik', 'Yup','Styled components','Scss'],
+                tools: ['Material UI', 'Bootstrap'],
             }
 
         },
@@ -259,7 +259,7 @@ export const MyResume = {
 } as const
 
 
-export const languages: Record<string,Record<string, string>> = {
+export const languages: Record<string, Record<string, string>> = {
     en: {
         aboutMe: 'AboutMe',
         experience: 'Experience',
